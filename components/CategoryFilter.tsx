@@ -8,11 +8,7 @@ const CategoryFilter = () => {
       <h3 className="text-3xl font-semibold text-white tracking-tight">Top categories</h3>
       <div className="flex mt-5 overflow-x-scroll no-scrollbar justify-center space-x-8 lg:justify-between lg:px-5">
         {categoryItems.map((item) => (
-          <Link
-            href={`/stays/?filter=${item.name}`}
-            key={item.id}
-            className="flex flex-col items-center gap-1"
-          >
+          <Link href="/stays" key={item.id} className="flex flex-col items-center gap-1">
             <div className="relative w-8 h-8 ">
               <Image
                 src={item.imageUrl}

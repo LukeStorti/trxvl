@@ -10,12 +10,12 @@ import Link from "next/link";
 
 const MobileNav = () => {
   return (
-    <div className="block sm:hidden">
+    <div className="block sm:hidden z-50">
       <DropdownMenu>
         <DropdownMenuTrigger>
           <Menu />
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="w-44 px-2 mx-4">
+        <DropdownMenuContent className="mr-8 border">
           {NAVLINKS.map((item) => (
             <DropdownMenuItem key={item.title}>
               <Link href={item.path} className="w-full">

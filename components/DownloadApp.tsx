@@ -11,14 +11,13 @@ const DownloadApp = () => {
   return (
     <section className="w-full mt-8 bg-background-image-app p-0 mx-0 min-h-[520px]">
       <div className="container flex flex-col-reverse sm:flex-row justify-around items-center ">
-        <div className="relative w-[342px] h-full  ml-12">
+        <div className="relative w-[342px] h-full ml-12">
           <Image
             src="/images/iPhone.png"
             alt="image of iPhone"
             width={342}
             height={500}
-            objectFit="contain"
-            objectPosition="center"
+            className="rounded-md object-contain w-full h-full"
           />
         </div>
         <div className="flex flex-col items-center sm:items-start  flex-1 h-[90%] w-full space-y-4">
@@ -73,12 +72,24 @@ const DownloadApp = () => {
                 <Separator orientation="vertical" className="text-white" />
               </div>
             </div>
-            <div className="flex flex-col space-y-4 mt-4">
+            <div className="flex flex-col space-y-4 mt-4 z-10">
               <Link href="https://play.google.com/store/apps?hl=en&gl=US" className="relative">
-                <Image src="/images/google.png" alt="google play store" width={200} height={100} />
+                <Image
+                  src="/images/google.png"
+                  alt="google play store"
+                  width={200}
+                  height={100}
+                  priority={false}
+                />
               </Link>
               <Link href="https://www.apple.com/app-store/" className="relative">
-                <Image src="/images/apple.png" alt="google play store" width={200} height={100} />
+                <Image
+                  src="/images/apple.png"
+                  alt="google play store"
+                  width={200}
+                  height={100}
+                  priority={false}
+                />
               </Link>
             </div>
           </div>

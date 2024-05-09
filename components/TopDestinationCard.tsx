@@ -14,15 +14,16 @@ const TopDestinationCard = ({
     <Link href={href}>
       <div className="w-52 h-52 rounded-md overflow-hidden">
         <div className="relative w-full h-full">
-          <Image
-            src={imageUrl}
-            alt={`image of ${location}`}
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-            className="rounded-md"
-            sizes="(max-width: 640px) 100vw, 50vw"
-          />
+          <div className="absolute inset-0">
+            <Image
+              src={imageUrl}
+              alt={`image of ${location}`}
+              fill
+              className="rounded-md h-full"
+              priority={true}
+              sizes="(max-width: 640px) 100vw, 50vw"
+            />
+          </div>
           <h4 className="absolute left-2 bottom-2 text-white font-semibold">{location}</h4>
         </div>
       </div>

@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 
 const NavLinks = () => {
   const pathName = usePathname();
+
   return (
     <>
       <div className="hidden sm:flex space-x-8">
@@ -14,7 +15,7 @@ const NavLinks = () => {
             href={item.path}
             key={item.title}
             className={
-              item.path === pathName
+              pathName.startsWith(item.path)
                 ? "underline underline-offset-4 font-medium decoration-2"
                 : "font-medium"
             }

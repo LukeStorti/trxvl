@@ -1,9 +1,5 @@
 export const NAVLINKS = [
   {
-    title: "Home",
-    path: "/",
-  },
-  {
     title: "Stays",
     path: "/stays",
   },
@@ -11,37 +7,33 @@ export const NAVLINKS = [
     title: "Flights",
     path: "/flights",
   },
-  {
-    title: "Packages",
-    path: "/packages",
-  },
 ];
 
 export const TOPDESTINATIONS = [
   {
     image: "/images/destinations/bali.jpg",
     location: "Bali, Indonesia",
-    href: "/stays/?filter=indonesia",
+    href: "/stays",
   },
   {
     image: "/images/destinations/ireland.jpg",
     location: "Kerry, Ireland",
-    href: "/stays/?filter=ireland",
+    href: "/stays",
   },
   {
     image: "/images/destinations/sydney.jpg",
     location: "Sydney, Australia",
-    href: "/stays/?filter=australia",
+    href: "/stays",
   },
   {
     image: "/images/destinations/paris.jpg",
     location: "Paris, France",
-    href: "/stays/?filter=france",
+    href: "/stays",
   },
   {
     image: "/images/destinations/tokyo.jpg",
     location: "Tokyo, Japan",
-    href: "/stays/?filter=japan",
+    href: "/stays",
   },
 ];
 
@@ -64,27 +56,27 @@ export const PROPERTYDATA = [
   {
     image: "/images/property/hotel.jpg",
     title: "Hotels",
-    href: "/packages/?filter=hotel",
+    href: "/stays",
   },
   {
     image: "/images/property/apartment.jpg",
     title: "Apartments",
-    href: "/packages/?filter=aparment",
+    href: "/stays",
   },
   {
     image: "/images/property/resort.jpg",
     title: "Resorts",
-    href: "/packages/?filter=resort",
+    href: "/stays",
   },
   {
     image: "/images/property/villa.jpg",
     title: "Villas",
-    href: "/packages/?filter=villa",
+    href: "/stays",
   },
   {
     image: "/images/property/cottage.jpg",
     title: "Cottages",
-    href: "/packages/?filter=cottage",
+    href: "/stays",
   },
 ];
 
