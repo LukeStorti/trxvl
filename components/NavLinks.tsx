@@ -9,7 +9,7 @@ const NavLinks = () => {
 
   return (
     <>
-      <div className="hidden sm:flex space-x-8">
+      <div className="hidden sm:flex space-x-8 mr-4">
         {NAVLINKS.map((item) => (
           <Link
             href={item.path}

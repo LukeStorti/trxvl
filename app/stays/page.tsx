@@ -1,3 +1,4 @@
+import PlanYourTrip from "@/components/PlanYourTrip";
 import StaysList from "@/components/StaysList";
 
 import { ACCOMMODATIONDATA } from "@/lib/accommodationData";
@@ -8,6 +9,7 @@ const StayRoute = () => {
       <h3 className="text-4xl md:text-6xl text-white font-bold">Find Your Ideal Getaway</h3>
 
       <StaysList data={ACCOMMODATIONDATA} />
+      <PlanYourTrip />
     </div>
   );
 };

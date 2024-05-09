@@ -4,6 +4,7 @@ import StaysCard from "./StaysCard";
 import { useState } from "react";
 import { Input } from "./ui/input";
 import { Search } from "lucide-react";
+import Image from "next/image";
 
 const StaysList = ({ data }: { data: accommodationDataProps[] }) => {
   const [filter, setFilter] = useState("");
@@ -18,7 +19,7 @@ const StaysList = ({ data }: { data: accommodationDataProps[] }) => {
   });
   return (
     <>
-      <div className="my-10 w-full md:w-1/3 flex items-center bg-white px-2 rounded">
+      <div className="mx-auto my-10 w-full md:w-1/3 flex items-center bg-white px-2 rounded">
         <Input
           onChange={(e) => setFilter(e.target.value)}
           placeholder="Search Locations"
@@ -28,7 +29,7 @@ const StaysList = ({ data }: { data: accommodationDataProps[] }) => {
       </div>
       <div>
         {filteredData.length > 0 ? (
-          <div className="grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
+          <div className="grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 gap-8 my-8">
             {filteredData.map((item) => (
               <StaysCard
                 key={item.id}
@@ -48,8 +49,13 @@ const StaysList = ({ data }: { data: accommodationDataProps[] }) => {
             ))}
           </div>
         ) : (
-          <div>
-            <p>There are currently no stays for this location...</p>
+          <div className="flex flex-col w-full items-center h-screen">
+            <div className="relative w-52 h-52 mx-auto">
+              <Image src="/images/empty.png" alt="empty search" fill />
+            </div>
+            <p className="text-white text-xl font-semibold tracking-tight">
+              No results for this search! Try something else...
+            </p>
           </div>
         )}
       </div>

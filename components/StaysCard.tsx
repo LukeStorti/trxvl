@@ -21,7 +21,7 @@ const StaysCard = ({
   id,
 }: accommodationDataProps) => {
   return (
-    <Card>
+    <Card className="shadow-lg">
       <CardContent className="flex flex-col items-center p-2">
         <div className="relative w-full h-64">
           <Image
@@ -68,7 +68,7 @@ const StaysCard = ({
             </li>
           ))}
         </div>
-        <div className="my-2 flex items-center w-full justify-between px-4">
+        <div className="my-2 flex items-center w-full justify-between space-x-2 px-4">
           <div className="flex space-x-2 items-center">
             <p className="text-muted-foreground line-through">${price * 1.5}</p>
             <h5 className="text-xl font-bold">${price}</h5>

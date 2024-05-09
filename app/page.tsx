@@ -4,6 +4,7 @@ import CategoryFilter from "@/components/CategoryFilter";
 import Hero from "@/components/Hero";
 import Offers from "@/components/Offers";
 import PlanYourTrip from "@/components/PlanYourTrip";
+import Reviews from "@/components/Reviews";
 import TopDestinations from "@/components/TopDestinations";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <TopDestinations />
         <Offers />
         <BrowseProperty />
+        <Reviews />
         <PlanYourTrip />
       </div>
     </>

@@ -3,10 +3,6 @@ export const NAVLINKS = [
     title: "Stays",
     path: "/stays",
   },
-  {
-    title: "Flights",
-    path: "/flights",
-  },
 ];
 
 export const TOPDESTINATIONS = [
@@ -84,4 +80,28 @@ export const FOOTERLINKS = [
   ["Home", "Stays", "Flights", "Packages"],
   ["Activities", "Destinations", "Travel Guides", "Contact"],
   ["About Us", "Blog", "FAQ", "Support"],
+];
+
+export const REVIEWSDATA = [
+  {
+    name: "Sophia Johnson",
+    location: "Paris, France",
+    description:
+      "Incredible experience using trxvl! Found the perfect deals for my Paris getaway. Highly recommend!",
+    image: "/images/reviews/2.jpg",
+  },
+  {
+    name: "David Banes",
+    location: "Tokyo, Japan",
+    description:
+      "trxvl made my Tokyo trip planning a breeze. The website is intuitive and offers fantastic recommendations!",
+    image: "/images/reviews/1.jpg",
+  },
+  {
+    name: "Raj Patel",
+    location: "Rio de Janeiro, Brazil",
+    description:
+      "I discovered trxvl while planning my Rio de Janeiro trip, and it was a game-changer!",
+    image: "/images/reviews/3.jpg",
+  },
 ];

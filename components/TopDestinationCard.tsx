@@ -19,7 +19,7 @@ const TopDestinationCard = ({
               src={imageUrl}
               alt={`image of ${location}`}
               fill
-              className="rounded-md h-full"
+              className="rounded-md h-full object-cover"
               priority={true}
               sizes="(max-width: 640px) 100vw, 50vw"
             />
