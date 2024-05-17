@@ -12,7 +12,7 @@ import { Star } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
 
-const page = ({ params }: { params: { id: number } }) => {
+const StayDetail = ({ params }: { params: { id: number } }) => {
   const [date, setDate] = useState<any>({
     from: undefined,
     to: undefined,
@@ -107,4 +107,4 @@ const page = ({ params }: { params: { id: number } }) => {
   );
 };
 
-export default page;
+export default StayDetail;
